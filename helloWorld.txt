@@ -1,0 +1,21 @@
+print("Hello World!")
+print("I like typing this.")
+print("This is fun.")
+
+
+
+#1. Hello World!
+#   I like typign this.
+#   This is fun.
+
+#3. yes
+
+#4. a) that oen line changes
+#   b) it prints 7
+#   c) it prints 3+4
+#   d) it gives an error leading to that line
+#   e) It pritns an extra empty line
+
+
+#6. print(3+4) is a math equation and prints out the answer. print("3+4") is a string,
+# so it prints exactly what you put in.
