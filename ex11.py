@@ -5,9 +5,9 @@
 ###############################################################################
 from formatting import clr, type
 
-def about_me():
-    name = input("Enter your name: ")
-    age = input("Enter your age: ")
+def about_me(name, age):
     type("My name is "+ clr.red(name) +" and I am "+ clr.brt_green(age)+" years old.")
 
-about_me()
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+about_me(name, age)
