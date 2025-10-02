@@ -15,6 +15,57 @@ def type(str, textSpeed = 0.03):
 
 
 
+#_____________________________frm_input________________________
+def input_frm(string, type, alt = "Not the right format"):
+  """
+  Keeps asking for input until a certain type is give
+  Syntax: input_frm(\"Whats your age: \", int)
+  """
+  ans = None
+  while isinstance(ans, type) == False:
+    ans = input(string)
+    try:
+      if type == str:
+        ans = str(ans)
+        
+      elif type == float:
+        ans = float(ans)
+        
+      elif type == int:
+        ans = int(ans)
+    except:
+      print('\033[0;31m' + alt + '\033[0m')
+  return ans
+
+
+
+
+#__________________________Clock__________________________
+
+class clock:
+  clock = time.localtime(time.time())
+  days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+  
+  months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  
+  
+  if clock.tm_mday == 1:
+    ending = "st"
+  elif clock.tm_mday == 2:
+    ending = "nd"
+  elif clock.tm_mday == 3:
+    ending = "rd"
+  else:
+    ending = "th"
+  
+  year      = clock.tm_year
+  month     = months[clock.tm_mon - 1]
+  month_day = str(clock.tm_mday) + ending
+  week_day  = days[clock.tm_wday]
+  hour      = clock.tm_hour
+  min       = clock.tm_min
+  sec       = clock.tm_sec
+
 
 
     
