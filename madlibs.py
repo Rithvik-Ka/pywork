@@ -20,7 +20,7 @@ As I was 13-VERB to my school bus, I was 14-ADJECTIVE because
 Little did I know it was because of my 17-THING"""
 
 #Intro
-input("\n"*21, "Welcome to Rithvik's Madlib!")
+input("\n"*21 + "Welcome to Rithvik's Madlib!")
 print("\n"*21)
 
 #storing all the variables in order that they appear in the paragraph
